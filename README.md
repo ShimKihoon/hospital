@@ -26,7 +26,7 @@
       2. 의사 목록 조회
       
   4. 로그인 페이지
-  ![로그인](https://user-images.githubusercontent.com/37172546/107968128-52176b00-6ff1-11eb-9f1a-476d6d920acb.JPG)
+      ![로그인](https://user-images.githubusercontent.com/37172546/107968128-52176b00-6ff1-11eb-9f1a-476d6d920acb.JPG)
       1. 로그인 container를 section화.
       2. Guest 로그인과 의사 로그인 두가지 중 하나 선택
       3. Kakao Map API를 이용해 지도 확대 축소, Marker 표시
