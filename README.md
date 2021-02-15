@@ -6,7 +6,8 @@
   1. Pycharm *(Anaconda interpreter)*: Python, HTML, JavaScript, JQuery, CSS
   2. HeidiSQL: MariaDB
   3. ERDCloud: Database table 시각화
-  ![ERD](https://user-images.githubusercontent.com/37172546/107967152-1e881100-6ff0-11eb-887e-9a27e1f0a814.jpg)
+  ![ERD](https://user-images.githubusercontent.com/37172546/107967359-5abb7180-6ff0-11eb-8825-2e08ac78a28c.jpg)
+
 
   5. template 출처: Bootstrap (https://www.templateshub.net/demo/?theme=Preclinic-Hospital-Bootstrap4-Admin)
   ------------------------------------------------------------------
@@ -24,5 +25,10 @@
       1. 병실 점유 현황 조회
       2. 의사 목록 조회
       
-  4. 로그인 기능
-      1.
+  4. 로그인 페이지
+  ![로그인](https://user-images.githubusercontent.com/37172546/107967904-0f559300-6ff1-11eb-98c8-393bdd76199e.JPG)
+      1. 로그인 container를 section화.
+      2. Guest 로그인과 의사 로그인 두가지 중 하나 선택
+      3. Kakao Map API를 이용해 지도 확대 축소, Marker 표시
+
+  5. 
