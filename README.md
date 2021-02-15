@@ -6,7 +6,8 @@
   1. Pycharm *(Anaconda interpreter)*: Python, HTML, JavaScript, JQuery, CSS
   2. HeidiSQL: MariaDB
   3. ERDCloud: Database table 시각화
-  ![ERD](https://user-images.githubusercontent.com/37172546/107970973-32824180-6ff5-11eb-8905-f280935409ff.jpg)
+        
+        ![ERD](https://user-images.githubusercontent.com/37172546/107970973-32824180-6ff5-11eb-8905-f280935409ff.jpg)
 
   4. template 출처: Bootstrap (https://www.templateshub.net/demo/?theme=Preclinic-Hospital-Bootstrap4-Admin)
   ------------------------------------------------------------------
