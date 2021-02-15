@@ -42,7 +42,9 @@
       - 기능별 block과 views.py에서 section contents 호출, 출력
   
   7. **Dashboard (index.html)**
-      ![dash](https://user-images.githubusercontent.com/37172546/107970937-2302f880-6ff5-11eb-922b-ef908c1bd556.JPG)      1. 침상 점유율 그래프
+  
+        ![dash](https://user-images.githubusercontent.com/37172546/107970937-2302f880-6ff5-11eb-922b-ef908c1bd556.JPG)      
+      1. 침상 점유율 그래프
       2. 질병별 환자 통계
   
   8. **Rooms (hospitalstructure.html)**
@@ -57,14 +59,20 @@
       4. 사용 중인 침상에 Tooltip 형태로 이용자 정보 출력
 
   9. **Doctors list**
+  
+        ![doc](https://user-images.githubusercontent.com/37172546/107971561-f9969c80-6ff5-11eb-83ea-4b9fe1a540d1.jpg)
       1. Grid / Widget 형태로 DB - DoctorDb에서 목록 출력
       2. selectbox로 분과별 의사 시각화
       3. treatment, chart 추가 가능(로그인 한 자신의 계정만 가능, 타 의사 정보 수정 불가)
 
   10. **treatment, chart**
+  
+        ![chart](https://user-images.githubusercontent.com/37172546/107971891-6316ab00-6ff6-11eb-8bbd-35afd435fa20.JPG)
       1. 담당 의사, 병명, 질병 등 정보 입력
       
   11. **Patients**
+  
+        ![pat](https://user-images.githubusercontent.com/37172546/107971712-2945a480-6ff6-11eb-82ec-5b9bd2bed358.jpg)
       1. DB와 연동해 patients list를 출력
       2. 의사로 로그인 한 경우 환자 추가 및 차트 조회 가능
   
