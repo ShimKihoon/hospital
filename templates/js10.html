@@ -1,0 +1,134 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="card">
+                <div class="card-body">
+                    <canvas id="halfcirclegraph"></canvas>
+                </div>
+                <div class="card card-body text-center bg-primary">
+                    <h3>Doughnut</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="card">
+                <div class="card-body">
+                    <canvas id="myChart2"></canvas>
+                </div>
+                <div class="card card-body text-center bg-primary">
+                    <h3>Doughnut</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+    <script>
+        data = {
+            datasets: [{
+                backgroundColor:['rgba(0,158,251,0.5)','rgba(67,67,72,0.5)'],
+                data: [10, 20]
+            }], // 라벨의 이름이 툴팁처럼 마우스가 근처에 오면 나타남
+            labels: ['red','yellow']
+        };
+            // 도넛형 차트
+            var ctx2 = document.getElementById("myChart2");
+            var myDoughnutChart = new Chart(ctx2, {
+                type: 'doughnut',
+                data: data,
+                options: {}
+            });
+    </script>
+    <script>
+        function graph(data){
+            alert('??');
+            graphdata = data.datas;
+
+            data = {
+                datasets: [{
+                    backgroundColor:['rgba(0,158,251,0.5)','rgba(67,67,72,0.5)'],
+                    data: [graphdata[0][2],graphdata[1][2]]
+                }],
+                labels: [graphdata[0][0],graphdata[1][0]]
+            };
+            var ctx1 = document.getElementById('halfcirclegraph');
+            var myDoughnutChart = new Chart(ctx1, {
+                type: 'doughnut',
+                data: data,
+                options: {
+                }
+            });
+
+             Highcharts.chart('container', {
+                    chart: {
+                        plotBackgroundColor: null,
+                        plotBorderWidth: 0,
+                        plotShadow: false
+                    },
+                    title: {
+                        text: 'Beds<br>Available',
+                        align: 'center',
+                        verticalAlign: 'middle',
+                        y: 60
+                    },
+                    tooltip: {
+                        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                    },
+                    accessibility: {
+                        point: {
+                            valueSuffix: '%'
+                        }
+                    },
+                    plotOptions: {
+                        pie: {
+                            dataLabels: {
+                                enabled: true,
+                                distance: -50,
+                                style: {
+                                    fontWeight: 'bold',
+                                    color: 'white'
+                                }
+                            },
+                            startAngle: -90,
+                            endAngle: 90,
+                            center: ['50%', '75%'],
+                            size: '100%'
+                        }
+                    },
+                    series: [{
+                        type: 'pie',
+                        name: 'Occupied',
+                        innerSize: '50%',
+                        data: graphdata,
+                    }]
+                });
+
+        };
+        function getData(){
+            $.ajax({
+                url: '{% url "graph" %}',
+                success:function(data){
+                    graph(data);
+                }
+            });
+        };
+        $(document).ready(function(){
+            getData();
+        });
+    </script>

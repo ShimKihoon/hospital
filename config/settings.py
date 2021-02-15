@@ -20,11 +20,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-<<<<<<< HEAD
 
-=======
-SECRET_KEY = 
->>>>>>> 8ca6d4b04f95ba324c889880bddda516e5143ef6
+# SECRET_KEY = 'd#-@&ks9tai1m^$z1=qo8ct@fdtvh7a_0ff%8kvi)p$5vgsz(%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -127,3 +124,4 @@ STATIC_URL = '/assets/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'assets')
 ]
+UPLOAD_DIR = os.path.join(BASE_DIR, 'assets/img');

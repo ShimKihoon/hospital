@@ -119,6 +119,8 @@ function getData1(){
 $(document).ready(function(){
    getData1();
 });
+    history.pushState(null, null, location.href);
+    window.onpopstate = function(event) { history.go(1); };
 </script>
 
 <style>
@@ -128,11 +130,6 @@ $(document).ready(function(){
       font-family: 'Noto Sans KR', sans-serif;
    }
 </style>
-<script>
-    history.pushState(null, null, location.href);
-    window.onpopstate = function(event) { history.go(1); };
-</script>
-
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <!--  가운데 카드 시트   -->
         <div class="page-wrapper">
