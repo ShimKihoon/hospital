@@ -48,6 +48,7 @@
       2. 질병별 환자 통계
   
   8. **Rooms (hospitalstructure.html)**
+  
       ![room](https://user-images.githubusercontent.com/37172546/107970852-06ff5700-6ff5-11eb-953a-72df1fdf4eb6.jpg)
       1. 층별 section화 및 병실 클릭 시 popup 형태로 출력
       2. 침상 사용 여부에 따라 색상 변화
