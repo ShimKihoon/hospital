@@ -31,5 +31,23 @@
       1. 로그인 container를 section화.
       2. Guest 로그인과 의사 로그인 두가지 중 하나 선택
       3. Kakao Map API를 이용해 지도 확대 축소, Marker 표시
-
-  5. 
+  
+  5. Database 연결 및 제어: frame 폴더
+      1. db.py : DB 접속 제어 기능
+      2. sql.py : Data manipulate를 위한 SQL문
+      3. table.py : 각 table은 class로 만들어 Python App에서 각 attribute에 접근할 수 있게 한다
+      4. util.py : DB에 연결하여 Data 편집 또는 App을 통해 Web page에 출력할 수 있다.
+  
+  6. base.html: 
+      - Web page의 base, 기초 페이지 역할. 
+      - 기능별 block과 views.py에서 section contents 호출, 출력
+  
+  7. Dashboard (index.html)
+      1. 침상 점유율 그래프
+      2. 질병별 환자 통계
+  
+  8. Rooms
+      1. 층별 section화
+      2. 침상 사용 여부에 따라 색상 변화
+          - 사용 중: 노랑
+          - 빈 침상: 초록
