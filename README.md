@@ -1,6 +1,7 @@
 ## Python + MariaDB + HTML + CSS + JS + JQuery을 이용한 Hospital 관리 Web
 
-### 개발 기한: # 2021/01/21 ~ 02/16 멀티캠퍼스 IoT 프로젝트 반
+### 개발 기한: 2021/01/21 ~ 02/16 멀티캠퍼스 IoT 프로젝트 A반
+###### 최종수정: 2021-02-16 심기훈
 ------------------------------------------------------------------
 #### 사용 IDE 및 언어
   1. Pycharm *(Anaconda interpreter)*: Python, HTML, JavaScript, JQuery, CSS
@@ -65,6 +66,7 @@
       1. Grid / Widget 형태로 DB - DoctorDb에서 목록 출력
       2. selectbox로 분과별 의사 시각화
       3. treatment, chart 추가 가능(로그인 한 자신의 계정만 가능, 타 의사 정보 수정 불가)
+      4. Doctor 추가 기능
 
   10. **treatment, chart**
   
