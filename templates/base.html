@@ -18,6 +18,7 @@
    <script src="https://code.highcharts.com/modules/exporting.js"></script>
    <script src="https://code.highcharts.com/modules/export-data.js"></script>
    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+<!-- 로그아웃 시 초기 화면으로 이동  -->
 <script>
     function logout(){
         location.href="logout";
@@ -45,6 +46,7 @@
     }
 
 </style>
+<!--side menu 선택시 음영-->
 <script>
 $(document).ready(function(){
     if({{menu}} == 1){
@@ -101,7 +103,7 @@ $(document).ready(function(){
         </div>
     </div>
 </div>
-
+<!--섹션, 블록화-->
     {% if section != None %}
         {% include section %}
     {% else %}

@@ -1,5 +1,6 @@
 {% load static %}
 
+<!--selectbox에서 항목 선택 시 if문으로 widget CSS 변경-->
 <script type="text/javascript">
 function populate(doc_dept){
     var doc_deptSelect = document.getElementById(doc_dept);
@@ -81,7 +82,7 @@ function populate(doc_dept){
     }
 </style>
 
-
+<!--시트 시작 시 text 받아오기 + 진료, 차트 id 체크-->
 <script>
     $(document).ready(function(){
         $( '#logi' ).load( 'doctors #baselogi');

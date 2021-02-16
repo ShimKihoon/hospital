@@ -10,6 +10,7 @@
     <title></title>
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
 
+<!-- 침상, 컨테이너, 툴팁 등의 style -->
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
@@ -352,6 +353,7 @@
         <div id ="door">출입문</div>
     </div>
 
+<!-- 툴팁 기본은 '빈 침대입니다.' 사용중이면 사용자 정보 표시  -->
    <div id="tooltip1">
        상세 정보
       <i class="far fa-question-circle"></i>
@@ -379,7 +381,7 @@
 
 
 
-
+<!--tooltip에 환자 정보 표시 -->
       {% for p in patient %}
          <script>
             selectRoom = "{{p.roomNo}}";

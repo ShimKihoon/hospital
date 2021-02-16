@@ -62,7 +62,7 @@ def index(request):
 ### Doctor 관련 ###
 def doctors(request):
     rdoctors = DoctorDb().select();
-
+    # 중복되는 분과 거르는 for문
     dd = [];
     for d in rdoctors:
         if d.dept not in dd:

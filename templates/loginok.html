@@ -24,20 +24,20 @@
 
 
 </style>
+<!--로그아웃 시 초기 페이지로 이동 + 뒤로가기 막기(history)-->
 <script>
-        function gotoindex(){
-            location.href="{% url 'index' %}";
-        };
+    function gotoindex(){
+        location.href="{% url 'index' %}";
+    };
 
-        function logout(){
-            location.href="logout";
-            setTimeout(function(){},500);
-            location.href="http://127.0.0.1:8000/";
-        };
-history.pushState(null, null, location.href);
-window.onpopstate = function(event) { history.go(1); };
+    function logout(){
+        location.href="logout";
+        setTimeout(function(){},500);
+        location.href="http://127.0.0.1:8000/";
+    };
 
-
+    history.pushState(null, null, location.href);
+    window.onpopstate = function(event) { history.go(1); };
 </script>
 <section>
         <div class="item">

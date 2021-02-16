@@ -1,6 +1,6 @@
 
 {% load static %}
-
+<!--그래프 container 및 데이터 불러오기-->
 <style>
     #container{
         width:100%;
@@ -128,6 +128,7 @@ $(document).ready(function(){
       font-family: 'Noto Sans KR', sans-serif;
    }
 </style>
+<!--뒤로가기 막기-->
 <script>
     history.pushState(null, null, location.href);
     window.onpopstate = function(event) { history.go(1); };
