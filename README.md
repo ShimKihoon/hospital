@@ -9,7 +9,7 @@
   * 사용 IDE 및 언어
   * 기능 개요
       * [사용 IDE 및 언어](#사용 IDE 및 언어)
-
+      * [기능 개요](#기능개요)
 
 #### 사용 IDE 및 언어
   1. Pycharm *(Anaconda interpreter)*: Python, HTML, JavaScript, JQuery, CSS
