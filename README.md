@@ -1,9 +1,16 @@
+# Specification
 ## Python + MariaDB + HTML + CSS + JS + JQuery을 이용한 Hospital 관리 Web
 
 ### 개발 기한: 2021/01/21 ~ 02/16 멀티캠퍼스 IoT 프로젝트 A반
 ###### 최종수정: 2021-02-16 심기훈
 ##### 중요! config/settings.py의 24번째 줄 주석 제거 후 사용 요망
 ------------------------------------------------------------------
+### Table of contents
+  * 사용 IDE 및 언어
+  * 기능 개요
+      * [사용 IDE 및 언어](#사용 IDE 및 언어)
+
+
 #### 사용 IDE 및 언어
   1. Pycharm *(Anaconda interpreter)*: Python, HTML, JavaScript, JQuery, CSS
   2. HeidiSQL: MariaDB
